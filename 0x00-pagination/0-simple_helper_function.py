@@ -8,7 +8,7 @@ from typing import Tuple
 def index_range(page: int, page_size: int) -> Tuple[int, int]:
     '''
     Returns a tuple containing the start and end indexes of the page
-    
+
     Parameters:
         page: int
         page_size: int
