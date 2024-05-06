@@ -10,10 +10,9 @@ from typing import List, Tuple
 class Server:
     '''
     Server class to paginate a dataset
-    
     Attributes:
         DATA_FILE: str
-    
+
     Methods:
         dataset(self) -> List[List]
         get_page(self, page: int = 1, page_size: int = 10) -> List[List]
@@ -31,7 +30,6 @@ class Server:
     def dataset(self) -> List[List]:
         '''
         Loads the dataset from a file and returns it
-        
         Return:
             List[List]
         '''
@@ -46,11 +44,9 @@ class Server:
     def get_page(self, page: int = 1, page_size: int = 10) -> List[List]:
         '''
         Returns the appropriate page of the dataset
-        
         Parameters:
             page: int
             page_size: int
-        
         Return:
             List[List]
         '''
@@ -62,11 +58,9 @@ class Server:
     def index_range(self, page: int, page_size: int) -> Tuple[int, int]:
         '''
         Returns a tuple containing the start and end indexes of the page
-        
         Parameters:
             page: int
             page_size: int
-        
         Return:
             Tuple[int, int]
         '''
