@@ -11,10 +11,8 @@ from typing import List, Dict
 class Server:
     '''
     Server class to paginate a dataset
-    
     Attributes:
         DATA_FILE: str
-    
     Methods:
         dataset(self) -> List[List]
         indexed_dataset(self) -> Dict[int, List]
@@ -26,7 +24,6 @@ class Server:
     def __init__(self):
         '''
         Constructor of the Server class
-        
         Attributes:
             __dataset: List[List]
             __indexed_dataset: Dict[int, List]
@@ -37,7 +34,6 @@ class Server:
     def dataset(self) -> List[List]:
         '''
         Loads the dataset from a file and returns it
-        
         Return:
             List[List]
         '''
@@ -52,7 +48,6 @@ class Server:
     def indexed_dataset(self) -> Dict[int, List]:
         '''
         Returns the indexed dataset
-        
         Return:
             Dict[int, List]
         '''
@@ -67,7 +62,6 @@ class Server:
     def get_hyper_index(self, index: int = None, page_size: int = 10) -> Dict:
         '''
         Returns a dictionary containing the hypermedia pagination
-        
         Parameters:
             index: int
             page_size: int
