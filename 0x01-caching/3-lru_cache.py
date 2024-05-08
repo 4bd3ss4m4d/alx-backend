@@ -32,7 +32,6 @@ class LRUCache(BaseCaching):
     def get(self, ke):
         '''
         This method gets the value associated with the key
-        
         Args:
             key: key to get the value from
         '''
