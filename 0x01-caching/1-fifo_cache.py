@@ -20,7 +20,6 @@ class FIFOCache(BaseCaching):
     def put(self, ke, item):
         '''
         Method that puts a key/value pair in the cache
-        
         Args:
             key: key for the cache
             item: value to be stored in the cache
@@ -35,7 +34,6 @@ class FIFOCache(BaseCaching):
     def get(self, key):
         '''
         Method that gets the value associated with the key
-        
         Args:
             key: key to get the value from
         '''
