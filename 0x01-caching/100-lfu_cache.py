@@ -20,7 +20,6 @@ class LFUCache(BaseCaching):
     def put(self, ke, item):
         '''
         This method puts a key/value pair in the cache
-        
         Args:
             key: key for the cache
             item: value to be stored in the cache
@@ -48,7 +47,6 @@ class LFUCache(BaseCaching):
     def get(self, ke):
         '''
         This method gets the value associated with the key
-        
         Args:
             key: key to get the value from
         '''
