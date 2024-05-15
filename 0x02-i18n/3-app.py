@@ -1,11 +1,17 @@
 #!/usr/bin/env python3
-""" doc doc doc """
+
+'''
+This module creates a Flask app.
+'''
+
 from flask import Flask, render_template, request
 from flask_babel import Babel
 
 
 class Config(object):
-    """doc doc doc"""
+    '''
+    This class creates a configuration object.
+    '''
 
     LANGUAGES = ["en", "fr"]
     BABEL_DEFAULT_LOCALE = "en"
@@ -19,13 +25,17 @@ babel = Babel(app)
 
 @babel.localeselector
 def get_locale() -> str:
-    """doc doc doc"""
+    '''
+    This function determines the best match with our supported languages.
+    '''
     return request.accept_languages.best_match(app.config["LANGUAGES"])
 
 
 @app.route("/")
 def index() -> str:
-    """doc doc doc"""
+    '''
+    This function returns a string.
+    '''
     return render_template("3-index.html")
 
 
