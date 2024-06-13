@@ -1,21 +1,5 @@
+# Ignore node_module created after running npm install
+node_modules/
+
 # Ignore test files
-*-main.py
-
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
-
-# MyPy
-.mypy_cache/
-
-# IDEs and editors
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Environment
-.env
-venv/
-/bin/bash: line 1: q: command not found
+*-main.js
